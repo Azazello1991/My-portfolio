@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portfolio</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Carattere&family=DM+Serif+Display:ital@1&family=Montserrat+Alternates:wght@600&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="css/swiper.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/mexin.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <div class="container">
+      <header class="header">
+
+         <div class="header-top flex">
+            <div class="left-side">
+               <h1 class="title">My portfolio</h1>
+            </div>
+            
+            <div class="lg-block">
+               <button class="lg js-ua" type="button" id="ua">UA</button>
+               <button class="lg js-en active" type="button" id="en">EN</button>
+            </div>
+
+            <button class="burger" type="button">
+               <span class="sr-only">Открыть меню</span>
+            </button>
+         </div>
+
+         <div class="header-bottom">
+            <div class="right-side">
+               <a class="img-wrapper" href="./img/avatar.jpg" target="_blank">
+                  <img class="my-photo" src="./img/avatar.jpg" alt="my photo">
+               </a>
+            </div>
+
+            <p class="about-my">Hello, my name is Sergey Boyko. I'm a web developer. I have 4 years of experience in creating
+               websites and web
+               applications. I offer you my services. Quality guarantee and good deadlines. Have a good day!
+            </p>
+
+            <div class="networks">
+               <a class="contact viber" href="viber://chat?number=%380505632738" target="_blank"> Viber</a>
+               <a class="contact telegram" href="https://t.me/FreelanserForLife" target="_blank"> Telegram</a>
+               <a class="contact facebook" href="https://www.facebook.com/sergey.boyko.716/" target="_blank"> Facebook</a>
+            </div>
+
+            
+         </div>
+
+         <!-- mobile menu -->
+         <div class="mobile-menu hidden">
+            <div class="mobile-content">
+               <div class="mobile-contacts">
+                  <a class="contact viber" href="#" target="_blank"> Viber</a>
+                  <a class="contact telegram" href="https://t.me/FreelanserForLife" target="_blank"> Telegram</a>
+                  <a class="contact facebook" href="https://www.facebook.com/sergey.boyko.716/" target="_blank"> Facebook</a>
+               </div>
+
+               <div class="mobile-contacts">
+                  <a class="contact tel" href="tel:+380999999999">+38(050)563-27-38</a>
+                  <a class="contact mail" href="mailto:sergiyboiko.kharkivua@gmail.com">sergiyboiko.kharkivua@gmail.com</a>
+               </div>
+
+               <div class="mobile-lgs">
+                  <button class="lg js-ua" type="button" id="ua">UA</button>
+                  <button class="lg js-en active" type="button" id="en">EN</button>
+               </div>
+            </div>
+         </div>
+      </header>
+   
+      <main class="main">
+         <h2 class="projects">I suggest you look at my projects</h2>
+         <span class="click">To go to the site, click on the card:</span>
+   
+         <div class="swiper-container two">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <a href="https://azazello1991.github.io/masons-shop/app/index.html" class="slider-image" target="_blank">
+                     <img class="project-photo massons"  src="./img/projects/massons-shop.png" alt="slide 1">
+                  </a>
+               </div>
+   
+               <div class="swiper-slide">
+                  <a href="" class="slider-image " target="_blank">
+                     <img class="project-photo simple-food" src="./img/projects/SimpleFood.png" alt="slide 2">
+                  </a>
+               </div>
+   
+               <div class="swiper-slide">
+                  <a href="" class="slider-image" target="_blank">
+                     <img class="project-photo" src="https://theme-land.com/sapp/demo/assets/img/screenshots/5.jpg" alt="slide 3">
+                  </a>
+               </div>
+   
+               <div class="swiper-slide">
+                  <a href="" class="slider-image" target="_blank">
+                     <img class="project-photo" src="https://theme-land.com/sapp/demo/assets/img/screenshots/4.jpg" alt="slide 4">
+                  </a>
+               </div>
+   
+               <div class="swiper-slide">
+                  <a href="" class="slider-image" target="_blank">
+                     <img src="https://theme-land.com/sapp/demo/assets/img/screenshots/2.jpg" alt="slide 5">
+                  </a>
+               </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="contacts">
+            <a class="contact tel" href="tel:+380999999999">+38(050)563-27-38</a>
+            <a class="contact mail" href="mailto:sergiyboiko.kharkivua@gmail.com">sergiyboiko.kharkivua@gmail.com</a>
+         </div>
+      </footer>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>
