@@ -61,6 +61,7 @@ const objTanslate = {
 const aboutMy = document.querySelector('.about-my');
 const projects = document.querySelector('.projects');
 const clickText = document.querySelector('.click');
+const description = document.querySelectorAll('.swiper-text');
 
 
 document.addEventListener('click', (e) => {
@@ -72,16 +73,40 @@ document.addEventListener('click', (e) => {
 });
 
 function transtateText(target) {
-   
+
    if (target.id === 'ua') {
       aboutMy.textContent = objTanslate.ua.message;
       projects.textContent = objTanslate.ua.title;
       clickText.textContent = objTanslate.ua.subtitle;
 
+      for (let i = 0; i < description.length; i++) {
+         if (description[i].id === "p1") {
+            description[i].textContent = objTanslate.ua.slideDescription.p1;
+         } else if (description[i].id === "p2") {
+            description[i].textContent = objTanslate.ua.slideDescription.p2;
+         } else if (description[i].id === "p3") {
+            description[i].textContent = objTanslate.ua.slideDescription.p3;
+         } else if (description[i].id === "p4") {
+            description[i].textContent = objTanslate.ua.slideDescription.p4;
+         }
+      }
+
    } else if (target.id === 'en') {
       aboutMy.textContent = objTanslate.en.message;
       projects.textContent = objTanslate.en.title;
       clickText.textContent = objTanslate.en.subtitle;
+
+      for (let i = 0; i < description.length; i++) {
+         if (description[i].id === "p1") {
+            description[i].textContent = objTanslate.en.slideDescription.p1;
+         } else if (description[i].id === "p2") {
+            description[i].textContent = objTanslate.en.slideDescription.p2;
+         } else if (description[i].id === "p3") {
+            description[i].textContent = objTanslate.en.slideDescription.p3;
+         } else if (description[i].id === "p4") {
+            description[i].textContent = objTanslate.en.slideDescription.p4;
+         }
+      }
    }
 }
 
