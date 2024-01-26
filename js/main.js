@@ -36,13 +36,25 @@ const objTanslate = {
    ua: {
       message: 'Привіт, мене звати Сергій Бойко. Я веб-розробник. Маю 4 роки досвіду створення сайтів та веб-додатків. Пропоную вам свої послуги. Гарантія якості та зручні терміни. Гарного дня!',
       title: 'Пропоную переглянути мої проекти',
-      subtitle: 'Щоб перейти на сайт, натисніть на картку:'
+      subtitle: 'Щоб перейти на сайт, натисніть на картку:',
+      slideDescription: {
+         p1: 'Верстка інтернет-магазину з функціональним кошиком для покупок, слайдерами, зірковим рейтингом, валідацією форм, реєстрацією, мобільним адаптивом, плавним скролом, липкою шапкою, меню-бургер, та інше.',
+         p2: 'Верстка інтернет-магазину, фільтр продуктів, ціновий діапазон, слайдери, валідація форм, мобільна адаптивність, плавне прокручування, липкою шапкою, меню-бургер, та інше.',
+         p3: 'Асинхронний веб-додаток, який створює завдання для груп людей. Працює з API, локальним сховищем. Є пошук і фільтри. Робота над помилками API.',
+         p4: 'Веб-додаток у вигляді еквалайзера. Працює з локальним сховищем та в режимі реального часу.',
+      }
    },
 
    en: {
       message: "Hello, my name is Sergey Boyko. I'm a web developer.I have 4 years of experience in creating websites and web applications.I offer you my services.Quality guarantee and good deadlines.Have a good day!",
       title: "I suggest you look at my projects",
-      subtitle: "To go to the site, click on the card:"
+      subtitle: "To go to the site, click on the card:",
+      slideDescription: {
+         p1: 'Layout of an online store with a functional shopping cart, sliders, star rating, form validation, registration, mobile responsiveness, smooth scrolling, sticky header, burger menu and more.',
+         p2: 'Layout of an online store, product filter, price range, sliders, form validation, mobile responsiveness, smooth scrolling, sticky header, burger menu and more.',
+         p3: 'An asynchronous web application that creates tasks for groups of people. Works with API, local storage. Has search and filters. Working on API errors.',
+         p4: 'Web application in the form of an equalizer. Works with local storage and real time.',
+      }
    }
 }
 
@@ -72,3 +84,16 @@ function transtateText(target) {
       clickText.textContent = objTanslate.en.subtitle;
    }
 }
+
+// ---------------------- hover cards ----------------- //
+
+// Get all elements with the class "hover"
+let hoverElements = document.querySelectorAll('.hover');
+
+// Add "mouseleave" event listener to each element
+hoverElements.forEach(function (element) {
+   element.addEventListener('mouseleave', function () {
+      // Remove the class "hover" from the current element
+      element.classList.remove('hover');
+   });
+});
