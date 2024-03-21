@@ -42,6 +42,7 @@ const objTanslate = {
          p2: 'Верстка інтернет-магазину, фільтр продуктів, ціновий діапазон, слайдери, валідація форм, мобільна адаптивність, плавне прокручування, липкою шапкою, меню-бургер, та інше.',
          p3: 'Асинхронний веб-додаток, який створює завдання для груп людей. Працює з API, локальним сховищем. Є пошук і фільтри. Робота над помилками API.',
          p4: 'Веб-додаток у вигляді еквалайзера. Працює з локальним сховищем та в режимі реального часу.',
+         p5: 'Лендінг клінінгової компанії.',
       }
    },
 
@@ -54,6 +55,7 @@ const objTanslate = {
          p2: 'Layout of an online store, product filter, price range, sliders, form validation, mobile responsiveness, smooth scrolling, sticky header, burger menu and more.',
          p3: 'An asynchronous web application that creates tasks for groups of people. Works with API, local storage. Has search and filters. Working on API errors.',
          p4: 'Web application in the form of an equalizer. Works with local storage and real time.',
+         p5: 'Landing of a cleaning company.',
       }
    }
 }
@@ -88,6 +90,8 @@ function transtateText(target) {
             description[i].textContent = objTanslate.ua.slideDescription.p3;
          } else if (description[i].id === "p4") {
             description[i].textContent = objTanslate.ua.slideDescription.p4;
+         } else if (description[i].id === "p5") {
+            description[i].textContent = objTanslate.ua.slideDescription.p5;
          }
       }
 
@@ -105,6 +109,8 @@ function transtateText(target) {
             description[i].textContent = objTanslate.en.slideDescription.p3;
          } else if (description[i].id === "p4") {
             description[i].textContent = objTanslate.en.slideDescription.p4;
+         } else if (description[i].id === "p5") {
+            description[i].textContent = objTanslate.en.slideDescription.p5;
          }
       }
    }
